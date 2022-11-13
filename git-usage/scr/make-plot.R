@@ -26,3 +26,7 @@ ggsave(filename = "out/git-usage.png",
 sink(file = "out/regression-summary.txt") #think i have changed the ouput to the out directory
 summary(lm(percentage ~ year, data = sods_data))
 sink()
+
+sink(file = "out/package.versions.txt") #think i have changed the ouput to the out directory
+sessionInfo()
+sink()
